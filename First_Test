@@ -8,3 +8,10 @@ describe('My first test', () => {
 
 
 ДЗ
+describe('dz', () =>{
+    it("Test_dz", () =>{
+        cy.visit('https://example.cypress.io')
+        cy.contains('siblings').click()
+        cy.url().should('include', "/commands/traversal")
+    })
+})
