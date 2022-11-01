@@ -1,0 +1,10 @@
+describe('My first test', () => {
+    it('Test1', () => {
+        cy.visit('https://example.cypress.io')
+        cy.contains('type').click()
+        cy.url().should('include', '/commands/actions')
+    })
+})
+
+
+ДЗ
