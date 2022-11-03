@@ -14,4 +14,22 @@ describe('dz', () =>{
         cy.contains('siblings').click()
         cy.url().should('include', "/commands/traversal")
     })
+});
+
+
+Тренировка 
+describe ('test suit', () => {
+    it('run1', () =>{
+        cy.visit('https://example.cypress.io')
+        cy.get('a[href="/commands/window"]').contains('window').click()
+        cy.url().should('include', '/commands/window')
+    })
+});
+
+
+describe('test suit2', () =>{
+    it('run2', () => {
+        cy.visit('https://example.cypress.io')
+        cy.get('a.dropdown-toggle').click()
+    });
 })
